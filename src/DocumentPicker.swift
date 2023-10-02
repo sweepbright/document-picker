@@ -28,11 +28,12 @@ import SwiftUI
       if self.isPresented {
           let panel = NSOpenPanel()
           panel.canChooseFiles = true
-          panel.canChooseDirectories = true
-          panel.allowedFileTypes = self.documentTypes
+          panel.canChooseDirectories = false
+          panel.allowedFileTypes = nil
           panel.resolvesAliases = true
           panel.isAccessoryViewDisclosed = false
-
+          panel.allowsMultipleSelection = true
+        
           // panel.allowsMultipleSelection = true
           // panel.directoryURL = URL()
 
