@@ -28,7 +28,7 @@ import SwiftUI
       if self.isPresented {
           let panel = NSOpenPanel()
           panel.canChooseFiles = true
-          panel.canChooseDirectories = false
+          panel.canChooseDirectories = true
           panel.allowedFileTypes = nil
           panel.resolvesAliases = true
           panel.isAccessoryViewDisclosed = false
